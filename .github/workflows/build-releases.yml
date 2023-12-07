@@ -4,9 +4,8 @@ on:
     inputs:
       steamworks_sdk_tag:
         description: 'Steamworks SDK Tag:'
-        required: true
         type: string
-        default: 'sdk-1.58'
+        default: 'sdk-1.57'
       godotsteam_version:
         description: 'GodotSteam GDExtension Tag:'
         required: true
