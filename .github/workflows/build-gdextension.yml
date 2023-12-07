@@ -88,14 +88,14 @@ jobs:
         uses: actions/checkout@v3
         with:
           repository: rlabrecque/SteamworksSDK
-          path: SteamworksSDK
+          path: Steamworks
 
       - name: Copy Steamworks
         shell: bash
         run: |
           ls
-          cp -r SteamworksSDK/public/steam godotsteam/sdk
-          cp -r SteamworksSDK/redistributable_bin godotsteam/sdk
+          cp -r Steamworks/public/steam godotsteam/sdk
+          cp -r Steamworks/redistributable_bin godotsteam/sdk
 
       - name: Install gcc-multilib
         if: ${{ startsWith(matrix.opts.arch, 'x86_32') && startsWith(matrix.opts.runner,'ubuntu-') }}
