@@ -87,7 +87,7 @@ jobs:
       - name: Checkout Steamworks SDK
         uses: actions/checkout@v3
         with:
-          repository: https://github.com/rlabrecque/SteamworksSDK
+          repository: rlabrecque/SteamworksSDK
 
       - name: Copy Steamworks
         shell: bash
