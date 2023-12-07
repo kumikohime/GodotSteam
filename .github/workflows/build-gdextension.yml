@@ -2,13 +2,7 @@ on:
   workflow_call:
     inputs:
       steamworks_sdk_tag:
-        required: true
         type: string
-    secrets:  
-      steamworks_sdk_repo:
-        required: true
-      steamworks_sdk_repo_token:
-        required: true
 
 env:
   BASE_BRANCH: gdextension
