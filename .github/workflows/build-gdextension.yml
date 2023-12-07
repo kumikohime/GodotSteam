@@ -92,6 +92,7 @@ jobs:
       - name: Copy Steamworks
         shell: bash
         run: |
+          ls
           cp -r SteamworksSDK/public/steam godotsteam/sdk
           cp -r SteamworksSDK/redistributable_bin godotsteam/sdk
 
